@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spooky Halloween Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Hegarty&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+    main img {
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+        main image.hover-swap {
+            height: 400px;
+            transition: .03s ease;
+        }
+        main image.hover-swap:hover {
+        content: url("halloween/images/skeleton-dancing-gif.gif");
+        }
+        .image-hover {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        }
+
+        .image-hover img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+        }
+
+        .image-hover .hover {
+        opacity: 0;
+        }
+
+        .image-hover:hover .hover {
+        opacity: 1;
+        }
+
+        .image-hover:hover .base {
+        opacity: 0;
+        }
+        body {
+        background-image: url("ice/halloween/images/pumpkin_background.webp");
+        background-repeat: repeat;
+        background-position: top left;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column; 
+        }
+
+        nav ul { 
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        gap: 40px;              
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 2px 2px 4px black;
+        }
+        main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;               
+        flex: 1;                  
+        align-content: center;      
+        }
+        main section {
+            grid-row-start: 2;
+        }
+        p {
+            background-color: white;
+        }
+        h2 {
+            color: orange;
+            background-color: black;
+        }
+        footer {
+            background-image: url("ice/halloween/images/skeleton-dancing-gif.gif");
+            min-height: 200px;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+   <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li>Costumes</li>
+                    <li>Candy</li>
+                    <li>Decorations</li>
+                    <li>Spooky</li>
+                    <li><a href="index2.html">HomePage</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Happy Halloween</h1>
+            <img src="ice/halloween/images/halloween.png">
+            <section>
+                <h2>Pumpkins</h2>
+                <p>Zombie ipsum reversus ab viral inferno, nam rick grimes
+                    malum cerebro. De carne lumbering animata corpora quaeritis.
+                    Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger
+                    omero undead survivor dictum mauris. </p>
+            </section>
+            <section>
+                <h2>Bats</h2>
+                <p>Hi mindless mortuis soulless
+                    creaturas, imo evil stalking monstra adventus resi dentevil vultus
+                    comedat cerebella viventium. Qui animated corpse, cricket bat max
+                    brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,
+                    suscitat mortuos comedere carnem virus.</p>
+            </section>
+            <section>
+                <h2>Skeletons</h2>
+                <p>Zonbi tattered for solum oculi
+                    eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut
+                    malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
+            </section>
+        </main>
+        <footer>
+            Happy Halloween &copy; 1513
+        </footer>
+    </div>
+</body>
+</html>
